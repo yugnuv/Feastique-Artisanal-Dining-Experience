@@ -380,5 +380,68 @@ footer {
   background-color: #333;
   color: #fff;
 }
+/* Base styles for larger screens */
+.menu-item {
+    padding: 20px;
+    text-align: center;
+}
+.item-header h3 {
+    font-size: 1.5rem;
+}
+.item-header .price {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Image responsiveness */
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .menu-tabs {
+        text-align: center;
+    }
+    .menu-item {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .item-header h3 {
+        font-size: 1.2rem;
+    }
+    .item-header .price {
+        font-size: 1rem;
+    }
+
+    .nav-tabs {
+        display: block;
+        margin-top: 10px;
+    }
+    .nav-link {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .menu-tabs ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    /* For mobile screens */
+    .menu-item {
+        padding: 5px;
+    }
+    .item-header h3 {
+        font-size: 1rem;
+    }
+    .item-header .price {
+        font-size: 0.9rem;
+    }
+}
 
  
